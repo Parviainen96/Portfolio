@@ -1,0 +1,11 @@
+def range(n):
+    lista = []
+    luku = 0
+    while n > 0:
+        lista.append(n-1)
+        n -= 1
+    rlista = reversed(lista)
+    l = []
+    for i in rlista:
+        l.append(i)
+    return l
