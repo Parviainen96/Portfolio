@@ -13,3 +13,25 @@ def binaariDesimaaliksi(b):
             aluku += 1
     
     return summa
+    
+def muutaHeksaksi(h):
+    hexa = ""
+    while (h>0):
+        a = h % 16
+        if (a <= 9):
+            hexa += str(a, )
+        elif (a == 10):
+            hexa += "A"
+        elif (a == 11):
+            hexa += "B"
+        elif (a == 12):
+            hexa += "C"
+        elif (a == 13):
+            hexa += "D"
+        elif (a == 14):
+            hexa += "E"
+        else:
+            (a == 15)
+            hexa += "F"
+        h /= 16
+    return "".join(reversed(hexa))
