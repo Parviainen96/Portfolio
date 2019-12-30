@@ -1,0 +1,5 @@
+def kuutionAla(sivu):
+    return 6*sivu**2
+
+def kuutionTilavuus(sivu):
+    return sivu**3
