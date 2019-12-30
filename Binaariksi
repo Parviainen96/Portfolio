@@ -1,0 +1,15 @@
+def binaariDesimaaliksi(b):
+    kaannettybin = "".join(reversed(b))
+    binlista = list(kaannettybin)
+    aluku = 0
+    bluku = 2
+    summa = 0
+    for i in binlista:
+    
+        if (i == "1"):
+            summa += 1 * bluku**aluku
+            aluku += 1
+        else:
+            aluku += 1
+    
+    return summa
