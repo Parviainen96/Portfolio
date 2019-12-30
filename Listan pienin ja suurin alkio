@@ -1,0 +1,13 @@
+def minimi(lista):
+    a = lista[0]
+    for i in lista:
+        if i < a:
+            a = i
+    return a
+    
+def maksimi(lista):
+    a = lista[0]
+    for i in lista:
+        if i > a:
+            a = i
+    return a
