@@ -1,0 +1,6 @@
+def parilliset(n,m):
+    if n == m:
+        return
+    elif n % 2 == 0:
+        print n
+    return parilliset(n+1,m)
