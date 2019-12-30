@@ -1,0 +1,15 @@
+import random
+
+def vero(palkka):
+
+    if palkka >= 3001:
+        print palkka * 0.45
+
+    if palkka >= 2001.0 and palkka <= 3000.0:
+        print palkka *0.22
+
+    if palkka >= 1001.0 and palkka <= 1500.0:
+        print palkka * 0.15
+
+    if palkka <= 1000.0:
+        print palkka * 0.1
