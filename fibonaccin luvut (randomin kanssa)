@@ -1,0 +1,20 @@
+import random
+
+print 'Fibonaccin luvut luvulle 21'
+fibonacci(21)
+for i in xrange(0, 5):
+    n = random.randint(50,350)
+    print 'Fibonaccin luvut luvulle', n
+    fibonacci(n)
+
+def fibonacci(kutsu):
+    lista = []
+    a = 0
+    b = 1
+    while b <= kutsu:
+        lista.append(b)
+        a, b = b, a+b
+    for i in lista:
+        print i
+    return
+    
