@@ -1,0 +1,5 @@
+def pistetulo(n,b):
+    summa = 0
+    for (i, x) in zip(n, b):
+        summa += i*x
+    return summa
