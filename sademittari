@@ -1,0 +1,48 @@
+public class harjoitustyo {
+    public static void main(String[] args) {
+        
+        long seed = Long.parseLong(args[0]);
+        Apumetodit apu = new Apumetodit(seed);
+        int kaupunkienMaara = 0;
+        
+        do {
+            try {
+                kaupunkienMaara = apu.lueKokonaisluku();
+            } catch (Exception InputMismatchException) {
+                 System.out.println("Anna kokonaisluku.");  
+            }
+        } while (kaupunkienMaara <= 0);
+
+        String[] kaupungit = new String[kaupunkienMaara]; 
+        int[]    sadeMaara = new int[kaupunkienMaara];
+
+        do {
+            do {        
+                try {
+                    kaupungit[kaupungit.length - kaupunkienMaara] = apu.lueMerkkijono();
+                } catch (Exception InputMismatchException) {
+                }
+            } while(kaupungit[kaupungit.length - kaupunkienMaara] == null);
+            
+            while(true) {        
+                try {
+                    int sade = apu.lueKokonaisluku();
+                    if (sade == -1) {
+                        break;
+                    }
+                    sadeMaara[sadeMaara.length - kaupunkienMaara] += sade;
+
+                } catch (Exception InputMismatchException) {
+                    System.out.println("Anna kokonaisluku.");
+                }
+            }        
+            kaupunkienMaara--;
+            
+        } while (kaupunkienMaara > 0);
+        
+        for (int i = 0; i < kaupungit.length; i++) {
+            System.out.println(kaupungit[i]+": " +sadeMaara[i]);
+        }
+    }
+}
+
