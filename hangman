@@ -1,0 +1,64 @@
+public class hirsipuu {
+    public static void main(String[] args) {
+        
+        long seed = Long.parseLong(args[0]);
+        Apumetodit apu= new Apumetodit(seed);
+
+        String arvattavaSana = "";
+        int arvaustenMaara = 0;
+        
+        do {
+            try {
+                arvattavaSana = apu.lueMerkkijono();
+            } catch(Exception InputMismatchException) {
+            }
+        } while(arvattavaSana == null);
+        
+        do {
+            try {
+                arvaustenMaara = apu.lueKokonaisluku();
+            } catch(Exception NumberFormatException) {
+            }
+        } while(arvaustenMaara == 0);
+
+        String arvaus = null;
+        char[] alaviivat = alaviivoiksi(arvattavaSana);
+        int oikeidenKirjaintenMaara = 0;
+        System.out.println(alaviivat);
+        
+        while(arvaustenMaara > 0) {
+            try {
+                arvaus = apu.lueMerkkijono();
+            } catch (Exception InputMismatchException){ 
+            }
+            if (arvaus == "") {
+                System.out.println("Tarvitaan vähintään yksi merkki.");
+                arvaustenMaara--;
+                continue;
+            }
+            for(int i = 0; i < arvattavaSana.length(); i++) {
+                if(arvaus.charAt(0) == arvattavaSana.charAt(i)) {
+                    alaviivat[i] = arvaus.charAt(0);
+                    oikeidenKirjaintenMaara++;
+                }
+            }
+            System.out.println(String.valueOf(alaviivat));
+            if (alaviivat.length == oikeidenKirjaintenMaara) {
+                System.out.println("Onnistuit!");
+                break;
+            }
+            arvaustenMaara--;
+            if (arvaustenMaara == 0) {
+                System.out.println("Yritä uudestaan!");
+            }
+        }   
+    }
+
+    public static char[] alaviivoiksi(String s) {
+        char[] alaViivat = new char[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            alaViivat[i] = '_';
+        }
+        return alaViivat;
+    }
+}
