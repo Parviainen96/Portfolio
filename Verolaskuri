@@ -15,7 +15,7 @@ def vero(palkka):
         print("Verotettava määrä: ",palkka * 0.1)
 
 for i in range (0,10):
-    a = random.randint(1000,4000)
-    print("Verotettava summa on ", a)
-    vero(a)
+    palkka = random.randint(1000,4000)
+    print("Verotettava summa on ", palkka)
+    vero(palkka)
     print()
