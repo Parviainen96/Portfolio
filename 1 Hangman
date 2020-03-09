@@ -1,3 +1,9 @@
+/*
+Ideana siis oli toteuttaa hirsipuu. Syöte saatiin siemenen kautta, joka välillä heitti arvon,
+joka aiheutti välillä poikkeustilan, esimerkiksi heittämällä merkkijonon, kun kysyttiin arvausten
+lukumäärää.  
+*/
+
 public class hirsipuu {
     public static void main(String[] args) {
         
