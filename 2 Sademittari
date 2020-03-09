@@ -1,3 +1,11 @@
+/*
+Koulussa suoritettu ensimmäinen harjoitustyö. Ideana siis oli luoda
+"sademittari", joka tallensi lukujen summan yhden muuttujan, kaupungin, alle,
+kunnes annettiin uusi String-arvo. 
+
+Kun tätä nyt katsoo "kokeneemmin silmin", tämä olisi voitu toteuttaa tosi näpsäkästi 
+HashMapilla.
+*/
 public class harjoitustyo {
     public static void main(String[] args) {
         
