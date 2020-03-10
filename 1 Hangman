@@ -1,6 +1,6 @@
 /*
 Ideana siis oli toteuttaa hirsipuu. Syöte saatiin siemenen kautta, joka välillä heitti arvon,
-joka aiheutti välillä poikkeustilan, esimerkiksi heittämällä merkkijonon, kun kysyttiin arvausten
+joka aiheutti poikkeustilan, esimerkiksi antamalla merkkijonon, kun kysyttiin arvausten
 lukumäärää.  
 */
 
