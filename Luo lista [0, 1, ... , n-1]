@@ -1,3 +1,8 @@
+# Helppo asia monimutkaisesti tehtynä, turhien 
+# välivaiheiden kautta. Pelkkä yksi kerta 
+# for loopissa olisi riittänyt toteuttamaan 
+# metodin toiminnallisuuden.
+
 def range(n):
     lista = []
     luku = 0
