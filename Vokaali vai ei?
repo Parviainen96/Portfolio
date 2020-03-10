@@ -1,6 +1,7 @@
-// Boolean !-operaattori on joskus kätevä tapa säästä itseään kaikkien vaihtoehtojen
+/*
+   Boolean !-operaattori on joskus kätevä tapa säästä itseään kaikkien vaihtoehtojen
    kirjoittamiselta, kuten muita-metodissa käy ilmi.
-
+*/
 public static int vokaaleja(String s) {
     int maara = 0;
     
