@@ -1,0 +1,34 @@
+// Boolean !-operaattori on joskus kätevä tapa säästä itseään kaikkien vaihtoehtojen
+   kirjoittamiselta, kuten muita-metodissa käy ilmi.
+
+public static int vokaaleja(String s) {
+    int maara = 0;
+    
+    for (int i = 0; i < s.length(); i++) {
+        if (
+        s.charAt(i) == 'a' || s.charAt(i) == 'e' ||
+        s.charAt(i) == 'i' || s.charAt(i) == 'o' || 
+        s.charAt(i) == 'u' || s.charAt(i) == 'y') 
+        {
+            maara++;
+        }
+    }
+    
+    return maara;
+}
+
+public static int muita(String s) {
+    int maara = 0;
+
+    for (int i = 0; i < s.length(); i++) {
+        if (
+        !(s.charAt(i) == 'a' || s.charAt(i) == 'e' || 
+          s.charAt(i) == 'i' || s.charAt(i) == 'o' || 
+          s.charAt(i) == 'u' || s.charAt(i) == 'y')
+        ) {
+            maara++;
+        }
+    }
+    
+    return maara;
+}
