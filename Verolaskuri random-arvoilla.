@@ -1,7 +1,6 @@
 import random
 
 def vero(palkka):
-
     if palkka >= 3001:
         print("Verotettava määrä: ",palkka * 0.45)
 
