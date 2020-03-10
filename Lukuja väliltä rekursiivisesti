@@ -1,3 +1,7 @@
+# En yleisesti pidä rekursiosta sen huonon 
+# luettavuuden takia, mutta joissakin 
+# tilanteissa se on ihan kätevä. 
+
 def parilliset(n,m):
     if n == m:
         return
