@@ -3,7 +3,7 @@
 # for loopissa olisi riittänyt toteuttamaan 
 # metodin toiminnallisuuden.
 
-def range(n):
+def sarja(n):
     lista = []
     luku = 0
     while n > 0:
@@ -13,14 +13,12 @@ def range(n):
     l = []
     for i in rlista:
         l.append(i)
-    return l
+    return lista
     
 # Käytännössä siis näin:
-def k(n):
+def sarja(n):
     lista = []
     for i in range(0, n):
       lista.append(i)
 
     return lista
-    
-print(k(9))
