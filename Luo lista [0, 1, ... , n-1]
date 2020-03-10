@@ -14,3 +14,13 @@ def range(n):
     for i in rlista:
         l.append(i)
     return l
+    
+# Käytännössä siis näin:
+def k(n):
+    lista = []
+    for i in range(0, n):
+      lista.append(i)
+
+    return lista
+    
+print(k(9))
