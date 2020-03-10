@@ -1,3 +1,10 @@
+
+#  Ellei tiedettä, että lista on nouseva tai laskeva,
+#  se on turvallisinta iteroida läpi kokonaan. Jos tämä 
+#  kuitenkin tiedetään, voitaisiin ottaa joko ensimmäinen
+#  tai viimeinen alkio.
+
+
 def minimi(lista):
     a = lista[0]
     for i in lista:
