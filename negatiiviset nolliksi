@@ -1,3 +1,8 @@
+# Tämä lyhyt pätkä koodia näyttää vähäpätöiseltä,
+# mutta kuvastaa silti sitä, että täytyy pitää 
+# myös while loop mielessä. Tämä ei aikanaan ratkennut 
+# for loopilla.
+
 def korvaaNegatiiviset(a):
     i = 0 
     while i < len(a):
